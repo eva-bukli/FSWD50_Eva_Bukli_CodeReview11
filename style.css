@@ -1,0 +1,42 @@
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    position: relative;
+    margin: 0!important; 
+    padding-top: 0!important;
+    padding-bottom: 7rem;
+    min-height: 100%;
+    
+  }
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+  .profimg {
+    width: 100px;
+
+  }
+  .navbar {
+    border-radius: 0!important;
+  }
+  #exampleFormControlSelect1 
+  {
+    height: 34px!important;
+  }
+ .nav-link{
+  font-size: 16px;
+ 
+ }
