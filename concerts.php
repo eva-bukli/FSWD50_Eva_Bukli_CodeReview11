@@ -20,7 +20,7 @@ INNER JOIN concert ON concert.fk_location=location.location_id";
 $result = mysqli_query($conn, $sql);
 $rows = $result->fetch_all(MYSQLI_ASSOC);
 foreach ($rows as $row) { ?>
-  <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item concert">
+  <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item concert  mb-4">
     <div class="card h-100">
       <a href="#"><img class="card-img-top" src="<?php echo $row["img"]; ?>" alt="img"></a>
       <div class="card-body">

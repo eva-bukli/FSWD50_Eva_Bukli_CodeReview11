@@ -12,10 +12,12 @@
         <div class="card-body">
           <h4 class="card-title">
             <a href="#"><?php echo $row["userId"].": ".$row["userName"]; ?></a>
-          </h4><p><b><?php echo $row["userEmail"]; ?></b></p>
+          </h4><p><?php echo $row["userRole"]; ?></p>
+          <p><b><?php echo $row["userEmail"]; ?></b></p>
           <form id="single" action='users.php' method='get' >
             <button class="btn btn-danger" type="submit" name='deleteuser' value="<?php echo $row["userId"]; ?>" >Delete User</button>
             <button class="btn btn-warning" type="submit" name='upgradeuser' value="<?php echo $row["userId"]; ?>" >Make Admin</button>
+            <button class="btn btn-warning" type="submit" name='upgradeuser2' value="<?php echo $row["userId"]; ?>" >Make User</button>
            </form>
            </div>
       </div>

@@ -58,6 +58,7 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
     left: 0;
     padding: 1rem;
     text-align: center;
+    margin-bottom: 0;
   }
   .profimg {
     width: 100px;

@@ -114,4 +114,16 @@ if(isset($_GET['upgradeuser'])) {
  }
  
 }
+
+if(isset($_GET['upgradeuser2'])) {
+  $id =$_GET['upgradeuser2'];
+
+  $sql = "UPDATE users SET userRole=0 WHERE userId='$id'";
+  if (mysqli_query($conn, $sql)) {
+   echo "<h2 class='mt-4'>Successfully updated</h2>";
+ } else {
+   echo "Update error for: " . $sql . "\n" . mysqli_error($conn);
+ }
+ 
+}
  ?>
