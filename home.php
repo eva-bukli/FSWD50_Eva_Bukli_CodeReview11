@@ -4,8 +4,8 @@ include ("header.php");?>
 	<small>Blog</small>
 </h1>
 </div>
-<div class="container">
-<div class="row">
+<div class="container mb-4">
+<div class="row mb-4">
 	<?php 
 	include ("restaurants.php");
 	include ("concerts.php"); 

@@ -1,6 +1,5 @@
 <?php
 include ("header.php");
-include ("actions/connection.php");
 ?>
 <div class="container">
   <div class="row justify-content-md-center">

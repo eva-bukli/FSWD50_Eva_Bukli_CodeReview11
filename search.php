@@ -1,9 +1,9 @@
 <?php include ("header.php"); ?>
 <br>
-<h2 align="center">Search Media</h2><br>
+<h2 align="center">Search Location</h2><br>
 <div class="form-group">
   <div class="input-group">
-    <input type="text" name="search_text" id="search_text" placeholder="type Title..." class="form-control">
+    <input type="text" name="search_text" id="search_text" placeholder="type Name..." class="form-control">
   </div>
 </div>
 <br>

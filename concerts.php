@@ -27,13 +27,20 @@ foreach ($rows as $row) { ?>
         <h4 class="card-title">
           <a href="#"><?php echo $row["concert_name"]; ?></a>
         </h4><p><b>concert</b></p>
-        <p class="card-text"><?php echo $row["concert_desc"]; ?></p>
+        <p class="card-text">Posted: <?php echo $row["concert_post"]; ?></p>
         <form class="mb-1" id="single" action='home.php' method='get' >
           <button name="like" value="<?php echo $row["concert_id"]; ?>" class="btn  btn-primary "><i class="fa fa-thumbs-up"></i> <?php echo $row["concert_like"]; ?></button>
         </form>
-        <form id="single" action='single-concert.php' method='get' >
-          <button class="btn btn-info btn-block " type="submit" name='id' value="<?php echo $row["concert_id"]; ?>">More..</button>  
+        <form id="single" action='single_concert.php' method='get' >
+          <button class="btn btn-info btn-block " type="submit" name='idc' value="<?php echo $row["concert_id"]; ?>">More..</button>  
+        </form><?php  
+ if (1==$currentrole) { echo 
+        "<form id='single' action='cupdate.php' method='get' >
+            <button class='btn btn-warning' type='submit' name='editcon' value='".$row['concert_id']."' >Edit</button>
         </form>
+        <form id='single' action='home.php' method='post' >
+            <button class='btn btn-danger' type='submit' name='deletecon' value='".$row['concert_id']."' >Delete</button>
+        </form>"; }?>
       </form>
     </div>
   </div>
