@@ -29,17 +29,17 @@ foreach ($rows as $row) { ?>
         <p><b><?php echo $row["restaurant_type"]; ?> restaurant</b></p>
         <p><a>Posted: <?php echo $row["restaurant_post"]; ?> </a></p>
         <form class="mb-1" id="single" action='home.php' method='get' >
-          <button name="like" value="<?php echo $row["restaurant_id"]; ?>" class="btn  btn-primary "><i class="fa fa-thumbs-up"></i> <?php echo $row["restaurant_like"]; ?></button>
+          <button name="like" value="<?php echo $row["restaurant_id"]; ?>" class="btn   mb-2 btn-primary "><i class="fa fa-thumbs-up"></i> <?php echo $row["restaurant_like"]; ?></button>
         </form>
         <form id="single" action='single_restaurant.php' method='get' >
-          <button class="btn btn-info btn-block " type="submit" name='idr' value="<?php echo $row["restaurant_id"]; ?>">More..</button>  
+          <button class="btn btn-info btn-block   mb-2" type="submit" name='idr' value="<?php echo $row["restaurant_id"]; ?>">More..</button>  
         </form><?php  
  if (1==$currentrole) { echo 
         "<form id='single' action='rupdate.php' method='get' >
-            <button class='btn btn-warning' type='submit' name='editrest' value='".$row['restaurant_id']."' >Edit</button>
+            <button class='btn btn-warning btn-block  mb-2' type='submit' name='editrest' value='".$row['restaurant_id']."' >Edit</button>
         </form>
         <form id='single' action='home.php' method='post' >
-            <button class='btn btn-danger' type='submit' name='deleterest' value='".$row['restaurant_id']."' >Delete</button>
+            <button class='btn btn-danger btn-block  mb-2' type='submit' name='deleterest' value='".$row['restaurant_id']."' >Delete</button>
         </form>"; }?>
       </form>
     </div>
